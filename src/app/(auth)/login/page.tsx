@@ -16,6 +16,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useAuth } from "@/components/auth-provider";
+import { SupabaseClient } from "@supabase/supabase-js";
 
 const loginSchema = z.object({
   email: z.string().email("Email không hợp lệ"),
