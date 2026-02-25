@@ -102,7 +102,7 @@ BEGIN
         VALUES (
             NEW.id,
             user_email,
-            CASE WHEN user_email = 'congkti@gmail.com' THEN 'admin' ELSE 'viewer' END
+            CASE WHEN user_email = 'congbui.dev@gmail.com' THEN 'admin' ELSE 'viewer' END
         )
         ON CONFLICT (email) DO UPDATE SET id = NEW.id;
     END IF;
